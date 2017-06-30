@@ -1,27 +1,149 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<title>Just some Stuff</title>
+		<style>
+		
+			body{
+				background-image: url('image/bg.jpg');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center; 
+			}
+			
+			
+			.picture {
+				padding: 2%;
+				background-color: white;
+				text-align: center;
+				max-width:80%;
+			}
+			
+			.imag {
+				max-width:99%;
+				height:auto;
+				align:center;	
+			}
+			
+			.pt {
+				height:20%;
+				background-color:blue;
+				color:green;
+			}
+			
+			
+			.intro{
+				height:95%;
+				background-color:grey;
+			}
+			
+			.space{
+				height:10%;
+			}
+			
+			
+			.title{
+				position:fixed;
+				bottom:12%;
+				left:10%;
+				height:5%;
+				width:80%;
+				background-color: green;
+				
+			}
+			
+			
+			.date {
+				position:fixed;
+				bottom:5%;
+				left:12%;
+				height:5%;
+				width:30%;
+				background-color: green;
+				
+				
+				
+				
+			}
+			
+			.price {
+				position:fixed;
+				bottom:5%;
+				right:12%;
+				height:5%;
+				width:30%;
+				background-color: green;
+				
+				
+				
+				
+			}
+		</style>
+		<script>
+			//make array of picture names
+			//
+			var titles = ["Into","asd","fds"];
+			var dates = ["Today","asd","fds"];
+			var prices = ["Not for Sale","asd","fds"];
+			var h = window.innerHeight;
+			function scrollFunction() {
+				// do your stuff here;
+				var picturenumber=Math.round(window.pageYOffset/(h*.7));
+				document.getElementById("title").innerHTML = titles[picturenumber]+" "+window.pageYOffset+" "+h+".";
+				document.getElementById("date").innerHTML = dates[picturenumber];
+				document.getElementById("price").innerHTML = prices[picturenumber];
+				
+			}
+		window.onscroll = scrollFunction;
+		document.addEventListener("touchmove", ScrollStart, false);
+		document.addEventListener("scroll", Scroll, false);
+
+		function ScrollStart() {
+			scrollFunction();//start of scroll event for iOS
+		}
+
+		function Scroll() {
+			scrollFunction();
+			//end of scroll event for iOS
+			//and
+			//start/end of scroll event for other browsers
+		}
+	</script>
 	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">some</a></li>
-	        	<li><a href="/">links</a></li>
-        		<li><a href="/">that</a></li>
-        		<li><a href="/">dont work</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		hi bae
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li></li>
-        		<li></li>
-			</ul>
-		</footer>
+	
+	<body bgcolor=#226699>
+	<center>
+		<div class="pt"><h1>Bluegreencollective</h1><h3>nOw FeAtUrInG uGlY cOlOrs!</h3></div>
+		<div class="space"></div>
+		<div class ="intro">Here's some bio graphy or whatever, scroll down for art<br>
+		text<br><br><br><br>idk<br><br><br>.?
+		</div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (1).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (2).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (3).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (4).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (5).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (6).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (7).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (8).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (9).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (10).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (11).jpg"></div>
+		<div class="space"></div>
+		<div class="picture"><img class = "imag" src="image/apage (12).jpg"></div>
+		<div class="space"></div>
+		<div id="title" class="title">Intro</div>
+		<div id="date" class="date">It's today</div>
+		<div id="price" class="price">Sold</div>
+		</center>
 	</body>
 </html>
