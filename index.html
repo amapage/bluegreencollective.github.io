@@ -2,9 +2,9 @@
 	<head>
 		<style>
 			body{
-				font-size: 1.2rem;
+				font-size: 1em;
 			}
-
+			
 			.backg{
 				position:fixed;
 				top:0%;
@@ -41,7 +41,7 @@
 				background-color: #008888;
 				border-style: solid;
 				border-color: #224444;
-				text-align:top;
+				
 			}
 			
 			
@@ -64,11 +64,14 @@
 				height:5%;
 				width:80%;
 				background-color: #91a8f7;
+				background-image: url("image/titlebox.jpg");
+				background-size: 100% 100%;
 				
-				border-style: groove;
+				border-style: solid;
 				border-color: #8397fe;
 				border-radius:3px;
 				
+				font-size: 1.2rem;
 			}
 			
 			
@@ -79,12 +82,14 @@
 				height:4%;
 				width:30%;
 				background-color: #91a8f7;
+				background-image: url("image/titlebox.jpg");
+				background-size: 100% 100%;
 				
 				border-style: groove;
 				border-color: #8397fe;
 				border-radius:2px;
 				
-				font-size: 12 pt;
+				font-size: 1.2rem;
 				
 			}
 			
@@ -95,12 +100,14 @@
 				height:4%;
 				width:30%;
 				background-color: #91a8f7;
+				background-image: url("image/titlebox.jpg");
+				background-size: 100% 100%;
 				
 				border-style: groove;
 				border-color: #8397fe;
-				border-radius:2px;
+				border-radius:2 px;
 				
-				
+				font-size: 1.2rem;
 			}
 			
 			.bluegreen{
@@ -110,12 +117,30 @@
 			.collective{
 				text-align:right;
 			}
+			
+			.letter{
+				max-height:98%;
+			}
+			
+			.boximg {
+				height: 100%;
+				width: 100%;
+				z-index:-10;
+			}
+			
+			.inbox{
+				height: 100%;
+				width: 10%;
+			}
+			
+			
 		</style>
 		<script>
 			//make array of picture names
 			//
+			var images = ["<img class=\"inbox\" src=\"image/0.jpg\">","<img class=\"inbox\" src=\"image/1.jpg\">","<img class=\"inbox\" src=\"image/2.jpg\">","<img src=\"image/3.jpg\">","<img src=\"image/4.jpg\">","<img src=\"image/5.jpg\">","<img src=\"image/6.jpg\">","<img src=\"image/7.jpg\">","<img src=\"image/8.jpg\">","<img class=\"inbox\" src=\"image/9.jpg\">","<img src=\"image/dollars.jpg\">","<img src=\"image/dash.jpg\">","<img class=\"inbox\" src=\"image/slash.jpg\">"];
 			var titles = ["BlueGreen Collective","Shells","Sideways Desk","Testicle-Chinned Bird","Photography Isn't Art","Non-non-representational","Office Min","Still Life with Speculum","The Process Of Creation","Blue Period","Come on in!","Problem Solver"];
-			var dates = ["Today","05/03/2016","03/02/2016","07/08/2015","02/01/2015","04/01/2014","23/3/2013","01/02/2013","01/01/2027","01/01/2010","01/01/2010","01/01/1969","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017"];
+			var dates = ["Today",""+images[0]+""+images[9]+""+images[12]+""+images[2]+""+images[1]+""+images[12]+""+images[9]+""+images[1],"03/02/2016","07/08/2015","02/01/2015","04/01/2014","23/3/2013","01/02/2013","01/01/2027","01/01/2010","01/01/2010","01/01/1969","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017","01/01/2017"];
 			var prices = ["Not for Sale","$400","$200","Sold","$350","$90,000","Sold","$8","Not For Sale","$","$","$","$","$","$","$","$","$","$"];
 			var h = window.innerHeight;
 			function scrollFunction() {
@@ -147,7 +172,7 @@
 	<body bgcolor=#226699>
 	<center>
 		<div class="backg"><img class="backgi" src="image/bg.JPG"></div>
-		<div class="pt"><h1><div class="bluegreen"><font color="#10ef2b">Blue</font><font color="#102bef">Green</font></div><div class="collective"><font color="#000000">Collective</font><br></h1></div></div>
+		<div class="pt"><img class="boximg" src="image/bgc.jpg"></div>
 		<div class="space"></div>
 		<div class ="intro"><br>Here's where the biography or whatever would go, or a splash page, it really doesn't matter, use your imagination. scroll down for art<br>
 		text<br><br><br><br>idk<br><br><br>.?
@@ -179,9 +204,9 @@
 		<div class="space"></div>
 		<div class="space"></div>
 		<div class="space"></div>
-		<div id="title" class="title">Intro</div>
-		<div id="date" class="date">It's today</div>
-		<div id="price" class="price">Sold</div>
+		<div id="title" class="title"><img src="image/0.jpg"></div>
+		<div id="date" class="date"></div>
+		<div id="price" class="price"></div>
 		</center>
 	</body>
 </html>
