@@ -19,6 +19,17 @@ div {
   border-color:0;
 }
 
+  #welcome{
+  border-style:solid;
+  border-width:4px;
+  border-color:#dd5E30;
+  background-color:#FF7F50;
+  
+  padding: 1px 1px;
+  font-family: "Comic Sans MS", "Comic Sans";
+  font-size: 150%;
+  }  
+  
 #startButton{
   border-style:solid;
   border-width:4px;
@@ -43,15 +54,18 @@ div {
 <title>Do U know english?</title>
 </head>
 <body>
+  <center>
+  <div id="welcome">
   How well do you know English? <br>Take this quiz to find out!<br>
 Keep clicking until you get the right answer! <br>Making mistakes are are only way to get better!
 <br>
 <br>
 <br>
-
+</div>
 <div id="startButton" onclick="startQuiz()">
 Click 2 Start!
 </div>
+    </center>
 <br>
 <br>
 <div id="quiz" style="display:none">
