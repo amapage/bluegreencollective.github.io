@@ -10,6 +10,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <style>
+  html{background: linear-gradient(to bottom right, #2222dd, #ffffff);}
 div {
   display:inline-block;
   padding: 8px 8px;
@@ -22,10 +23,10 @@ div {
   #welcome{
   border-style:solid;
   border-width:4px;
-  border-color:#dd5E30;
-  background-color:#FF7F50;
+  border-color:#000000;
+  background-color:#222277;
   
-  padding: 1px 1px;
+  padding: 10px 10px;
   font-family: "Comic Sans MS", "Comic Sans";
   font-size: 150%;
   }  
@@ -35,7 +36,7 @@ div {
   border-width:4px;
   border-color:#dd5E30;
   background-color:#FF7F50;
-  
+  font-size:200%;
   padding: 1px 1px;
 }
 
@@ -62,6 +63,7 @@ Keep clicking until you get the right answer! <br>Making mistakes are are only w
 <br>
 <br>
 </div>
+    <br><br>
 <div id="startButton" onclick="startQuiz()">
 Click 2 Start!
 </div>
@@ -169,6 +171,7 @@ function startQuiz() {
     d = new Date()
     st = d.getTime();
     document.getElementById("quiz").style.display = "block";
+    document.getElementbyId("welcome").style.display = "none";
   }
 }
 
