@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<style>
+  body{
+    background: linear-gradient(to bottom right, #ffffff, #ccccff);
+    background-attachment:fixed;
+  }
+div {
+  display:inline-block;
+  padding: 8px 8px;
+  cursor:default;
+  border-style:solid;
+  border-width: 2px;
+  border-color:0;
+}
+
+  #welcome{
+  border-style:solid;
+  border-width:4px;
+  border-color:#000000;
+  background-color:#ddddff;
+  
+  padding: 10px 10px;
+  font-family: "Comic Sans MS", "Comic Sans";
+  font-size: 150%;
+  }  
+  
+#startButton{
+  border-style:solid;
+  border-width:4px;
+  border-color:#dd5E30;
+  background-color:#FF7F50;
+  font-size:200%;
+  padding: 1px 1px;
+}
+
+#finish{
+  border-style:solid;
+  border-width:4px;
+  border-color:#000000;
+  background-color:#FFFF00;
+  
+  padding: 1px 1px;
+  
+}
+
+  #eng{
+    position:fixed;
+    bottom:12%;
+    right: 3%;
+    border-style:none;
+    max-width:35%
+  
+  }
+  
+  #lang{
+    position:fixed;
+    bottom:3%;
+    right: 3%;
+    border-style:none;
+    max-width:32%
+  }
+
+</style>
+<title>Law Example</title>
+</head>
+<body>
+  <center>
+  <div id="welcome">
+  Will individuals have an ownership interest in the entity?
+  <br><br>
+<div id="startButton" onclick="startProfit()">
+  For-Profit
+</div>
+<div id=startButton onclick="startNonProfit">Non-Profit</div>
+
+
+    </center>
+<br>
+<br>
+
+<div id="nonprofit" style="display:none">
+(insert questions for non-profit here!)
+</div>
+
+<div id="forprofit" style="display:none">
+<center><h1>Are You Actually Ready To Form An Entity?</h1><center>
+<br><br><br>
+
+1. Do you have a product or service?
+<br><br>
+<div id="oneA" onclick="points('oneA', 70, 1)">Yes</div> +70 - show 1a,1b,
+No -20
+One is being developed +30
+
+<div id="subOne" style="display:none">1b. Is someone else already doing it better?<br>
+<div id="subOneA" onclick="points('subOneA', -70, 0)">Yes -70</div>
+<div id="subOneB" onclick="points('subOneB', 20, 0)">No +20</div>
+</div>
+
+
+
+2. Do you have a business plan
+Yes +20
+Yes, it is written out, and I have estimates of revenue, expenses, potential customers, suppliers, etc. +60
+No -30
+
+3. Do you have a name for your entity
+Yes +20
+No -20
+
+
+4. Do you have a logo
+Yes +10
+No -10
+
+
+
+
+
+
+
+</div>
+
+<br><br><br>
+<center><div id="finish" onclick="finishQuiz()" >Finish</div>
+<br><br>
+<div id="time" style="border-style:none"><br></div><br><br>
+</div>
+  </center>
+  <br><br>
+
+
+<script>
+var points
+
+function points(name,p,show){
+  points = points+p;
+  var x = document.getElementById(name);
+  x.style.backgroundColor="#3333ff";
+  
+  if(show==1){document.getElementById('subOne').style.display = "block";}
+    
+}
+
+function startProfit() {
+    document.getElementById("forprofit").style.display = "block";
+    document.getElementById("nonprofit").style.display = "none";
+}
+
+function startNonProfit(){
+    document.getElementById("forprofit").style.display = "none";
+    document.getElementById("nonprofit").style.display = "block";
+}
+
+function finishQuiz(){
+  message = "";
+  
+  if(points>100){message="Yes! You are ready to form an entity!";}
+  if(points<100){message="Unclear, please consult an attorney";}
+  if(points<0){message="No, definitely not."}
+  document.getElementById("time").innerHTML=message;
+}
+
+</script>
+
+</body>
+</html>
