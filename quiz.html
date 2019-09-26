@@ -176,6 +176,7 @@ var next=2;
   function showNext(){
     document.getElementById("qq"+next+"").style.display="block";
     this.next++;
+    window.scrollTo({ bottom: 0, behavior: 'smooth' })
   }
   
 function answer(name,cont,right){
@@ -202,7 +203,7 @@ function startQuiz() {
     d = new Date()
     st = d.getTime();
     document.getElementById("quiz").style.display = "block";
-    document.getElementById("welcome").style.display = "none";
+    //document.getElementById("welcome").style.display = "none";
   }
 }
 
