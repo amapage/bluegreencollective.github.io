@@ -154,11 +154,13 @@ Click 2 Start!
 <div id="tenC" onclick="answer('tenC',' - Congratulations! You probably know the whole alphabet!',true)">C. Z</div><br>
 <div id="tenD" onclick="answer('tenD','- You cannot win, you literally cannot win, even if you get them all right you don’t win. This is just a web quiz, do you think you get something if you get them all right?',false)">D. t </div><br>
 </div><br>
+<div id="qq11" style="display:none">  
 <br><br><br>
 <center><div id="finish" onclick="finishQuiz()" >Click to calculate your score!</div>
 <br><br>
 <div id="time" style="border-style:none"><br></div><br><br>
 </div>
+  </div>
   </center>
   <br><br>
   <center>©1998</center>
@@ -178,10 +180,13 @@ var next=2;
   
 function answer(name,cont,right){
   var x = document.getElementById(name);
-  if(x.innerHTML.length<12){x.innerHTML=x.innerHTML+" "+cont;}
+  if(x.innerHTML.length<12){
+    x.innerHTML=x.innerHTML+" "+cont;
+    if(right){showNext();}
+                           }
   if(right){
     x.style.backgroundColor="#79ed4b";
-    showNext();
+    
   }else{
     x.style.backgroundColor="#ff4242";
   }
