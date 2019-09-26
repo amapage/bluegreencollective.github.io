@@ -89,16 +89,16 @@ Click 2 Start!
 <div id="quiz" style="display:none">
 
 1. I think _____  retarded.<br><br>
-<div id="oneA" onclick="answer('oneA','- Although commonly used, this is in fact retarded. Try again.',false)">A. Your </div><br>
-<div id="oneB" onclick="answer('oneB','- Although commonly used, this is in fact retarded. Try again.',false)">B. Their </div><br>
+<div id="oneA" onclick="answer('oneA','- Although commonly used, this is in fact incorrect. Try again.',false)">A. Your </div><br>
+<div id="oneB" onclick="answer('oneB','- Although commonly used, this is in fact incorrect. Try again.',false)">B. Their </div><br>
 <div id="oneC" onclick="answer('oneC',' - Correct! But dont say retarded',true)">C. You're</div><br>
-<div id="oneD" onclick="answer('oneD','- Although commonly used, this is in fact retarded. Try again.',false)">D. There </div><br>
+<div id="oneD" onclick="answer('oneD','- Although commonly used, this is in fact incorrect. Try again.',false)">D. There </div><br>
 </div><br>
 <div id="qq2" style="display:none">2. Sheldon says this is a great show, but I think ____ retarded.<br><br>
 <div id="twoA" onclick="answer('twoA','- Look, we are starting with the easy ones, okay?',false)">A. Its </div><br>
 <div id="twoB" onclick="answer('twoB','- Yes! Thank god. ',true)">B. It's </div><br>
-<div id="twoC" onclick="answer('twoC','- Really? Try again.',false)">C. I'ts </div><br>
-<div id="twoD" onclick="answer('twoD',' - Hah! I bet you re-tell jokes from popsicle sticks. Dont even try again, just go away.',false)">D. Bazinga!</div><br>
+<div id="twoC" onclick="answer('twoC','- Try again.',false)">C. I'ts </div><br>
+<div id="twoD" onclick="answer('twoD','- Hah!',false)">D. Bazinga!</div><br>
 </div><br>
 <div id="qq3" style="display:none">3. What does the alphabet start with?<br><br>
 <div id="threeA" onclick="answer('threeA',' - no, try again.',false)">A. A</div><br>
@@ -119,26 +119,26 @@ Click 2 Start!
 <div id="fiveC" onclick="answer('fiveC','- Okay, damn. Did you make it past third grade? We all know i before e, except after C. Try again!',false)">C. D </div><br>
 <div id="fiveD" onclick="answer('fiveD','- Look, if you dont even try, this wont be fun for either of us. Try again, or just leave.',false)">D. O </div><br>
 </div><br>
-<div id="qq6" style="display:none">6. Which of the following words can NOT be formed from these: I O U T S N
+<div id="qq6" style="display:none">6. Which of the following words can NOT be formed from these: I O U T S N E M
 <br><br>
 <div id="sixA" onclick="answer('sixA','- Nope! You just need to rearrange them! Try again!',false)">A. SNOT </div><br>
 <div id="sixB" onclick="answer('sixB','- Nope! Just break off the first half of the U and you can form the J.',false)">B. JOIN </div><br>
-<div id="sixC" onclick="answer('sixC','- I dont know what path you took to get to this answer, but its retarded.',false)">C. NOT </div><br>
-<div id="sixD" onclick="answer('sixD','- Right! Since you broke the U in half to make the J, you cant make NUT anymore. Good thinking!',true)">D. NUT </div><br>
+<div id="sixC" onclick="answer('sixC','- What path did you take to get to this answer?',false)">C. NOT </div><br>
+<div id="sixD" onclick="answer('sixD','- Right! Since you broke the U in half to make the J, you cant make MUTE anymore. Good thinking!',true)">D. MUTE </div><br>
 </div><br>
 <div id="qq7" style="display:none">7. Which comes after the letter i?
 <br><br>
-<div id="sevenA" onclick="answer('sevenA',' - Yeah, it was a question mark! Sometimes, giving up is the right answer!',true)">A. ? </div><br>
+<div id="sevenA" onclick="answer('sevenA',' - Yeah, the question mark! Sometimes, giving up is the right answer!',true)">A. ? </div><br>
 <div id="sevenB" onclick="answer('sevenB','- Ha! Thought you were onto me? Try again.',false)">B. E </div><br>
 <div id="sevenC" onclick="answer('sevenC','- we just covered this... try again.',false)">C. E </div><br>
 <div id="sevenD" onclick="answer('sevenD','- You need to read the question more carefully, try again.',false)">D. J </div><br>
 </div><br>
-<div id="qq8" style="display:none">8. Which is the most common in the English language?
+<div id="qq8" style="display:none">8. What is a palindrome?
 <br><br>
-<div id="eightA" onclick="answer('eightA','- Grade inflation isnt there yet, try again.',false)">A. A </div><br>
-<div id="eightB" onclick="answer('eightB','- No, try again.',false)">B. E </div><br>
-<div id="eightC" onclick="answer('eightC','- No, try again.',false)">C. O </div><br>
-<div id="eightD" onclick="answer('eightD','- correct! U certainly are not special!',true)">D. U </div><br>
+<div id="eightA" onclick="answer('eightA','- how were you fooled by the same word again?',false)">A. A word that is the same backwards and forwards </div><br>
+<div id="eightB" onclick="answer('eightB','- No, try again.',false)">B. sdraw rof dna sdrawk cab sret tel emaS</div><br>
+<div id="eightC" onclick="answer('eightC','- No, try again.',false)">C. Racecar </div><br>
+<div id="eightD" onclick="answer('eightD','- vroom vroom! That means punctuation doesnt count in car',true)">D. Race card</div><br>
 </div><br>
 <div id="qq9" style="display:none">9. i before e except after...
 <br><br>
@@ -152,9 +152,20 @@ Click 2 Start!
 <div id="tenA" onclick="answer('tenA','- No! Are you at the point where you are just clicking all the answers to see what they say?',false)">A. T </div><br>
 <div id="tenB" onclick="answer('tenB','- Step four: profit! Try again!',false)">B. ? </div><br>
 <div id="tenC" onclick="answer('tenC',' - Congratulations! You probably know the whole alphabet!',true)">C. Z</div><br>
-<div id="tenD" onclick="answer('tenD','- You cannot win, you literally cannot win, even if you get them all right you don’t win. This is just a web quiz, do you think you get something if you get them all right?',false)">D. t </div><br>
+<div id="tenD" onclick="answer('tenD','- You cannot win, you literally cannot win, this is just a web quiz',false)">D. t </div><br>
 </div><br>
-<div id="qq11" style="display:none">  
+<div id="qq11" style="display:none">
+BONUS QUESTION! (Won't lose any points)<br>
+Which of these is an oxymoron?
+<br><br>
+<div id="levA" onclick="answer('levA','- No!',false)">A. Firefighter committing arson</div><br>
+<div id="levB" onclick="answer('levB','- No!',false)">B. Jumbo Shrimp </div><br>
+<div id="levC" onclick="answer('levC','- No!,true)">C. Lawyer getting sued</div><br>
+<div id="levD" onclick="answer('levD','- No!',false)">D. Astronaut being buried</div><br>
+</div><br>
+
+  
+ 
 <br><br><br>
 <center><div id="finish" onclick="finishQuiz()" >Click to calculate your score!</div>
 <br><br>
