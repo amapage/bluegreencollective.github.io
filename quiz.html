@@ -48,6 +48,7 @@ div {
   border-width:4px;
   border-color:#000000;
   background-color:#FFFF00;
+  font-size:300%;
   
   padding: 1px 1px;
   
@@ -88,17 +89,17 @@ Click 2 Start!
 <br>
 <div id="quiz" style="display:none">
 
-1. I think _____  retarded.<br><br>
-<div id="oneA" onclick="answer('oneA','- Although commonly used, this is in fact incorrect. Try again.',false)">A. Your </div><br>
-<div id="oneB" onclick="answer('oneB','- Although commonly used, this is in fact incorrect. Try again.',false)">B. Their </div><br>
-<div id="oneC" onclick="answer('oneC',' - Correct! But dont say retarded',true)">C. You're</div><br>
-<div id="oneD" onclick="answer('oneD','- Although commonly used, this is in fact incorrect. Try again.',false)">D. There </div><br>
+1. I think _____  wrong.<br><br>
+<div id="oneA" onclick="answer('oneA','- Although commonly used, this is incorrect. Try again.',false)">A. Your </div><br>
+<div id="oneB" onclick="answer('oneB','- Although commonly used, this is incorrect. Try again.',false)">B. Their </div><br>
+<div id="oneC" onclick="answer('oneC',' - Correct!',true)">C. You're</div><br>
+<div id="oneD" onclick="answer('oneD','- Although commonly used, this is incorrect. Try again.',false)">D. There </div><br>
 </div><br>
 <div id="qq2" style="display:none">2. Sheldon says this is a great show, but I think ____ retarded.<br><br>
 <div id="twoA" onclick="answer('twoA','- Look, we are starting with the easy ones, okay?',false)">A. Its </div><br>
 <div id="twoB" onclick="answer('twoB','- Yes! Thank god. ',true)">B. It's </div><br>
-<div id="twoC" onclick="answer('twoC','- Try again.',false)">C. I'ts </div><br>
-<div id="twoD" onclick="answer('twoD','- Hah!',false)">D. Bazinga!</div><br>
+<div id="twoC" onclick="answer('twoC','- Try again.',false)">C. Its' </div><br>
+<div id="twoD" onclick="answer('twoD','- Hah!',false)">D. I'ts </div><br>
 </div><br>
 <div id="qq3" style="display:none">3. What does the alphabet start with?<br><br>
 <div id="threeA" onclick="answer('threeA',' - no, try again.',false)">A. A</div><br>
@@ -108,16 +109,16 @@ Click 2 Start!
 </div><br>
 <div id="qq4" style="display:none">4. Which of these is NOT a word:
 <br><br>
-<div id="fourA" onclick="answer('fourA','- Right! Seagull is a bird, not a word, but they do rhyme.',true)">A. Seagull </div><br>
-<div id="fourB" onclick="answer('fourB','- Nope! This is a word! I learned it from Scrabble so I dont know what it means.',false)">B. Cwm </div><br>
+<div id="fourA" onclick="answer('fourA','- Nope! This is a word! I learned it from Scrabble so I dont know what it means.',true)">A. Cwm </div><br>
+<div id="fourB" onclick="answer('fourB','- Right! Seagull is a bird, not a word, but they do rhyme.',false)">B. Seagull </div><br>
 <div id="fourC" onclick="answer('fourC','- Did you think there were only two genders? Congratulations, you got this question wrong, AND you are a bigot! Try again!',false)">C. Ze </div><br>
 <div id="fourD" onclick="answer('fourD','- Sorry, Gyft is a perfectly acceptable spelling of gift in middle english, which is a kind of English. Try again!',false)">D. Gyfte </div><br>
 </div><br>
 <div id="qq5" style="display:none">5. What comes before E?<br><br>
 <div id="fiveA" onclick="answer('fiveA','- No, your other left! Try again!',false)">A. F </div><br>
 <div id="fiveB" onclick="answer('fiveB','- Lucky guess.',true)">B. I </div><br>
-<div id="fiveC" onclick="answer('fiveC','- Okay, damn. Did you make it past third grade? We all know i before e, except after C. Try again!',false)">C. D </div><br>
-<div id="fiveD" onclick="answer('fiveD','- Look, if you dont even try, this wont be fun for either of us. Try again, or just leave.',false)">D. O </div><br>
+<div id="fiveC" onclick="answer('fiveC','- Okay, damn. We all know i before e, except after C. Try again!',false)">C. D </div><br>
+<div id="fiveD" onclick="answer('fiveD','- Look, if you dont even try, this wont be fun for either of us. Try again.',false)">D. O </div><br>
 </div><br>
 <div id="qq6" style="display:none">6. Which of the following words can NOT be formed from these: I O U T S N E M
 <br><br>
@@ -128,9 +129,9 @@ Click 2 Start!
 </div><br>
 <div id="qq7" style="display:none">7. Which comes after the letter i?
 <br><br>
-<div id="sevenA" onclick="answer('sevenA',' - Yeah, the question mark! Sometimes, giving up is the right answer!',true)">A. ? </div><br>
+<div id="sevenA" onclick="answer('sevenA',' - Yeah, the question mark!',true)">A. ? </div><br>
 <div id="sevenB" onclick="answer('sevenB','- Ha! Thought you were onto me? Try again.',false)">B. E </div><br>
-<div id="sevenC" onclick="answer('sevenC','- we just covered this... try again.',false)">C. E </div><br>
+<div id="sevenC" onclick="answer('sevenC','- We just covered this... try again.',false)">C. E </div><br>
 <div id="sevenD" onclick="answer('sevenD','- You need to read the question more carefully, try again.',false)">D. J </div><br>
 </div><br>
 <div id="qq8" style="display:none">8. What is a palindrome?
@@ -143,7 +144,7 @@ Click 2 Start!
 <div id="qq9" style="display:none">9. i before e except after...
 <br><br>
 <div id="nineA" onclick="answer('nineA','- Haha, I would be confused too! Try again!',false)">A. ? </div><br>
-<div id="nineB" onclick="answer('nineB','- How many fucking times do we have to go over this',false)">B. C </div><br>
+<div id="nineB" onclick="answer('nineB','- How many times do we have to go over this',false)">B. C </div><br>
 <div id="nineC" onclick="answer('nineC','- Do you even know why this is the right answer?',true)">C. </div><br>
 <div id="nineD" onclick="answer('nineD','',false)">D. I refuse to do this again.</div><br>
 </div><br>
